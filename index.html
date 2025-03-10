@@ -1,1 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEMULI - Refreshing & Delicious Treats</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>STEMULI - Savor the Flavor!</h1>
+    </header>
+    
+    <main>
+        <section class="intro">
+            <h2>Welcome to STEMULI!</h2>
+            <p>Affordable and delicious refreshments perfect for summer!</p>
+            <button class="btn" onclick="showPopup('grandOpeningPopup')">Join Our Grand Opening!</button>
+        </section>
+        
+        <section class="menu">
+            <h2>Our Menu</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <h3>🍹 Refreshing Drinks</h3>
+                    <p>🍋 Cucumber Lemonade - ₱50</p>
+                    <p>🥭 Mango Shake - ₱60</p>
+                    <p>🍉 Watermelon Cooler - ₱55</p>
+                </div>
+                <div class="menu-item">
+                    <h3>🍽️ Mains</h3>
+                    <p>🍣 Kimbap - ₱80</p>
+                    <p>🥪 Tuna Bread - ₱40</p>
+                    <p>🍗 Chicken Wrap - ₱90</p>
+                </div>
+                <div class="menu-item">
+                    <h3>🍰 Desserts</h3>
+                    <p>🍫 Graham Bar - ₱30</p>
+                    <p>🍮 Jelly Cake - ₱45</p>
+                    <p>🎂 Choco Moist Cake - ₱70</p>
+                </div>
+            </div>
+        </section>
+        
+        <button class="btn order-btn" onclick="showPopup('contactPopup')">Order Now</button>
+    </main>
+    
+    <div id="overlay" class="overlay" onclick="closePopup('contactPopup'); closePopup('grandOpeningPopup');"></div>
+    
+    <div id="contactPopup" class="popup">
+        <h2>Contact Us</h2>
+        <p><strong>Phone:</strong> +63929-3422-281</p>
+        <p><strong>Email:</strong> stemuli2025@gmail.com</p>
+        <p><strong>Address:</strong> Doyong, Calasiao, Pangasinan, Philippines</p>
+        <button class="close" onclick="closePopup('contactPopup')">Close</button>
+    </div>
+    
+    <div id="grandOpeningPopup" class="popup">
+        <h2>Join Our Grand Opening!</h2>
+        <p>Prizes await! Be part of our celebration!</p>
+        <button class="close" onclick="closePopup('grandOpeningPopup')">Close</button>
+    </div>
+    
+    <footer>
+        &copy; 2025 STEMULI. All Rights Reserved.
+    </footer>
+</body>
+</html>
 
